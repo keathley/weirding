@@ -1,6 +1,5 @@
 defmodule WeirdingTest do
   use ExUnit.Case
-  doctest Weirding
 
   test "starts with a capital" do
     first_word =

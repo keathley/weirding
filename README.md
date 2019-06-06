@@ -1,14 +1,12 @@
 # Weirding
 [docs](https://hexdocs.pm/weirding).
 
-> Holograms twisted her eyes. An uncomfortable stirring sounded genuinely happy. Case put aside to the lift of the blasphemy pouring her call it. Yueh stiffened, whirled away "I didn’t remember it safe distance. And to a watch these garments" the man shrugged.
-
 Weirding offers the best in class solution for generating tons of absurd text for your
 elixir project.
 
 ```elixir
 iex> Weirding.words()
-=> "Fenring Ambassador to the charts are knocked out. I just enough to the door . . . . . \" \"What would come. \"I call you cares to augment an amplified by the basin. She turned, began to the axis, the pockets of science. He"
+=> "Holograms twisted her eyes. An uncomfortable stirring sounded genuinely happy. Case put aside to the lift of the blasphemy pouring her call it. Yueh stiffened, whirled away \"I didn’t remember it safe distance. And to a watch these garments\" the man shrugged."
 ```
 
 ## Why?
