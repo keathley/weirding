@@ -1,7 +1,10 @@
 defmodule Weirding.Chain do
+  @moduledoc false
+  # This module provides a basic markov chain for generating text.
+
   def build(corpus) do
     corpus
-    |> String.split()
+    |> cleanup
     |> create_wordlist(%{})
   end
 
@@ -40,5 +43,12 @@ defmodule Weirding.Chain do
       followers ->
         Enum.random(followers)
     end
+  end
+
+  defp cleanup(str) do
+    str
+    |> String.split()
+    |> Enum.map(& String.replace(&1, "\"", ""))
+    |> Enum.map(& String.replace_leading(&1, "-", ""))
   end
 end
