@@ -1,7 +1,9 @@
 # Weirding
 
-Weirding offers the best in class solution for generating tons of absurd text for your
-elixir project.
+<!-- MDOC !-->
+
+Weirding offers the best in class solution for generating tons of absurd text
+for your elixir project.
 
 ```elixir
 iex> Weirding.words()
@@ -33,4 +35,3 @@ def deps do
   ]
 end
 ```
-

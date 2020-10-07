@@ -1,6 +1,7 @@
 defmodule Weirding.MixProject do
   use Mix.Project
 
+  @source_url "https://github.com/keathley/weirding"
   @version "0.2.2"
 
   def project do
@@ -14,19 +15,17 @@ defmodule Weirding.MixProject do
       description: description(),
       package: package(),
       name: "Weirding",
-      source_url: "https://github.com/keathley/weirding",
+      source_url: @source_url,
       docs: docs(),
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       mod: {Weirding.Application, []}
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
       {:benchee, "~> 1.0", only: [:dev]},
@@ -45,14 +44,14 @@ defmodule Weirding.MixProject do
       name: "weirding",
       files: ["lib", "mix.exs", "LICENSE.md", "README.md", "priv"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/keathley/weirding"},
+      links: %{"GitHub" => @source_url},
     ]
   end
 
   def docs do
     [
       source_ref: "v#{@version}",
-      source_url: "https://github.com/keathley/weirding",
+      source_url: @source_url,
       main: "Weirding",
     ]
   end
