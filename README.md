@@ -29,7 +29,7 @@ I don't know why you would but I'm not going to tell you how to live your life.
 ```elixir
 def deps do
   [
-    {:weirding, "~> 0.1.0"},
+    {:weirding, "~> 0.2"},
   ]
 end
 ```
