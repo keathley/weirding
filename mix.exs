@@ -21,12 +21,15 @@ defmodule Weirding.MixProject do
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    []
+    [
+      mod: {Weirding.Application, []}
+    ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:benchee, "~> 1.0", only: [:dev]},
       {:ex_doc, "~> 0.19", only: [:dev, :test]},
     ]
   end
