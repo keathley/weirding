@@ -60,7 +60,8 @@ defmodule Weirding.Chain do
   end
 
   def init(_opts) do
-    term = :erlang.binary_to_term(File.read!("priv/chain.txt"))
+    file = Path.absname("priv/chain.txt", Application.app_dir(:weirding))
+    term = :erlang.binary_to_term(File.read!(file))
     :persistent_term.put({Weirding, :chain}, term)
 
     {:ok, %{}}
